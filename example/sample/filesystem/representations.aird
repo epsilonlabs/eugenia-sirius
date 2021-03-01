@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:filesystem="filesystem" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_pMCrsHq9EeubEdYVZEdsyQ" selectedViews="_vPpz8Hq9Eeu58Luv6QLqsQ" version="14.3.0.201909031200">
+    <semanticResources>MyFilesystem.filesystem</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_vPpz8Hq9Eeu58Luv6QLqsQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_vhlRcHq9Eeu58Luv6QLqsQ" name="new Diagram" repPath="#_vdUcgHq9Eeu58Luv6QLqsQ" changeId="2781bed2-2a68-4f46-9cce-7af12c08e2e5">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']"/>
+        <target xmi:type="filesystem:Filesystem" href="MyFilesystem.filesystem#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_vdUcgHq9Eeu58Luv6QLqsQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vhfx4Hq9Eeu58Luv6QLqsQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_vhfx4Xq9Eeu58Luv6QLqsQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vh_hIHq9Eeu58Luv6QLqsQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_vh_hIXq9Eeu58Luv6QLqsQ" type="Sirius" element="_vdUcgHq9Eeu58Luv6QLqsQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_viM8gHq9Eeu58Luv6QLqsQ" type="2002" element="_vfHzUHq9Eeu58Luv6QLqsQ">
+          <children xmi:type="notation:Node" xmi:id="_viURQHq9Eeu58Luv6QLqsQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_viVfYHq9Eeu58Luv6QLqsQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_vic0IHq9Eeu58Luv6QLqsQ" type="3008" element="_vfSLYHq9Eeu58Luv6QLqsQ">
+              <children xmi:type="notation:Node" xmi:id="_vidbMHq9Eeu58Luv6QLqsQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_vidbMXq9Eeu58Luv6QLqsQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_vihsoHq9Eeu58Luv6QLqsQ" type="3007" element="_vfXq8Hq9Eeu58Luv6QLqsQ">
+                  <children xmi:type="notation:Node" xmi:id="_viiTsHq9Eeu58Luv6QLqsQ" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_viiTsXq9Eeu58Luv6QLqsQ" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_vii6wHq9Eeu58Luv6QLqsQ" type="3016" element="_vfYSAHq9Eeu58Luv6QLqsQ">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_vii6wXq9Eeu58Luv6QLqsQ" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vii6wnq9Eeu58Luv6QLqsQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_vihsoXq9Eeu58Luv6QLqsQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vihsonq9Eeu58Luv6QLqsQ" x="30" y="29" width="120" height="40"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_vidbMnq9Eeu58Luv6QLqsQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_vidbM3q9Eeu58Luv6QLqsQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_vic0IXq9Eeu58Luv6QLqsQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vic0Inq9Eeu58Luv6QLqsQ" x="30" y="29"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_viepUHq9Eeu58Luv6QLqsQ" type="3007" element="_vhNeAHq9Eeu58Luv6QLqsQ">
+              <children xmi:type="notation:Node" xmi:id="_vifQYHq9Eeu58Luv6QLqsQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_vifQYXq9Eeu58Luv6QLqsQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_vii6w3q9Eeu58Luv6QLqsQ" type="3016" element="_vhOFEHq9Eeu58Luv6QLqsQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_vii6xHq9Eeu58Luv6QLqsQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vii6xXq9Eeu58Luv6QLqsQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_viepUXq9Eeu58Luv6QLqsQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_viepUnq9Eeu58Luv6QLqsQ" x="20" y="144" width="120" height="40"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_viVfYXq9Eeu58Luv6QLqsQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_viVfYnq9Eeu58Luv6QLqsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_viM8gXq9Eeu58Luv6QLqsQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_viM8gnq9Eeu58Luv6QLqsQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_via-8Hq9Eeu58Luv6QLqsQ" type="2002" element="_vfQ9QHq9Eeu58Luv6QLqsQ">
+          <children xmi:type="notation:Node" xmi:id="_vibmAHq9Eeu58Luv6QLqsQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_vibmAXq9Eeu58Luv6QLqsQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_vijh0Hq9Eeu58Luv6QLqsQ" type="3008" element="_vhWA4Hq9Eeu58Luv6QLqsQ">
+              <children xmi:type="notation:Node" xmi:id="_vijh03q9Eeu58Luv6QLqsQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_vijh1Hq9Eeu58Luv6QLqsQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_vijh1Xq9Eeu58Luv6QLqsQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_vijh1nq9Eeu58Luv6QLqsQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_vijh0Xq9Eeu58Luv6QLqsQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vijh0nq9Eeu58Luv6QLqsQ" x="30" y="29"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_vibmAnq9Eeu58Luv6QLqsQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_vibmA3q9Eeu58Luv6QLqsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_via-8Xq9Eeu58Luv6QLqsQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_via-8nq9Eeu58Luv6QLqsQ" x="370" y="42"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_vh_hInq9Eeu58Luv6QLqsQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_vi1OoHq9Eeu58Luv6QLqsQ" type="4001" element="_vhcHgHq9Eeu58Luv6QLqsQ" source="_vijh0Hq9Eeu58Luv6QLqsQ" target="_vic0IHq9Eeu58Luv6QLqsQ">
+          <children xmi:type="notation:Node" xmi:id="_vi11sHq9Eeu58Luv6QLqsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vi11sXq9Eeu58Luv6QLqsQ" x="10" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vi2cwHq9Eeu58Luv6QLqsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vi2cwXq9Eeu58Luv6QLqsQ" x="-11" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vi2cwnq9Eeu58Luv6QLqsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vi2cw3q9Eeu58Luv6QLqsQ" x="-7" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vi1OoXq9Eeu58Luv6QLqsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vi1Oonq9Eeu58Luv6QLqsQ" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vi1Oo3q9Eeu58Luv6QLqsQ" points="[-74, -8, 290, 28]$[-283, -28, 81, 8]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vjFtUHq9Eeu58Luv6QLqsQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vjFtUXq9Eeu58Luv6QLqsQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vjFtUnq9Eeu58Luv6QLqsQ" type="4001" element="_vhejwHq9Eeu58Luv6QLqsQ" source="_viepUHq9Eeu58Luv6QLqsQ" target="_vihsoHq9Eeu58Luv6QLqsQ">
+          <children xmi:type="notation:Node" xmi:id="_vjFtVnq9Eeu58Luv6QLqsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vjFtV3q9Eeu58Luv6QLqsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vjGUYHq9Eeu58Luv6QLqsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vjGUYXq9Eeu58Luv6QLqsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vjGUYnq9Eeu58Luv6QLqsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vjGUY3q9Eeu58Luv6QLqsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vjFtU3q9Eeu58Luv6QLqsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vjFtVHq9Eeu58Luv6QLqsQ" fontName="Segoe UI"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vjFtVXq9Eeu58Luv6QLqsQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vjGUZHq9Eeu58Luv6QLqsQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vjGUZXq9Eeu58Luv6QLqsQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_vfHzUHq9Eeu58Luv6QLqsQ" name="C:">
+      <target xmi:type="filesystem:Drive" href="MyFilesystem.filesystem#//@drives.0"/>
+      <semanticElements xmi:type="filesystem:Drive" href="MyFilesystem.filesystem#//@drives.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_vfMr0Hq9Eeu58Luv6QLqsQ" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_vfSLYHq9Eeu58Luv6QLqsQ" name="My Documents" incomingEdges="_vhcHgHq9Eeu58Luv6QLqsQ">
+        <target xmi:type="filesystem:Folder" href="MyFilesystem.filesystem#//@drives.0/@contents.0"/>
+        <semanticElements xmi:type="filesystem:Folder" href="MyFilesystem.filesystem#//@drives.0/@contents.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_vfSLYXq9Eeu58Luv6QLqsQ" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_vfXq8Hq9Eeu58Luv6QLqsQ" name="photo.jpg" incomingEdges="_vhejwHq9Eeu58Luv6QLqsQ" width="12" height="4" resizeKind="NSEW">
+          <target xmi:type="filesystem:File" href="MyFilesystem.filesystem#//@drives.0/@contents.0/@contents.0"/>
+          <semanticElements xmi:type="filesystem:File" href="MyFilesystem.filesystem#//@drives.0/@contents.0/@contents.0"/>
+          <ownedStyle xmi:type="diagram:Ellipse" uid="_vfYSAHq9Eeu58Luv6QLqsQ" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="12" verticalDiameter="4" color="211,211,211">
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='File']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='File']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_vhNeAHq9Eeu58Luv6QLqsQ" name="photo.lnk" outgoingEdges="_vhejwHq9Eeu58Luv6QLqsQ" width="12" height="4" resizeKind="NSEW">
+        <target xmi:type="filesystem:Shortcut" href="MyFilesystem.filesystem#//@drives.0/@contents.1"/>
+        <semanticElements xmi:type="filesystem:Shortcut" href="MyFilesystem.filesystem#//@drives.0/@contents.1"/>
+        <ownedStyle xmi:type="diagram:Ellipse" uid="_vhOFEHq9Eeu58Luv6QLqsQ" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="12" verticalDiameter="4" color="211,211,211">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_vfQ9QHq9Eeu58Luv6QLqsQ" name="D:">
+      <target xmi:type="filesystem:Drive" href="MyFilesystem.filesystem#//@drives.1"/>
+      <semanticElements xmi:type="filesystem:Drive" href="MyFilesystem.filesystem#//@drives.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_vfRkUHq9Eeu58Luv6QLqsQ" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_vhWA4Hq9Eeu58Luv6QLqsQ" name="Backup" outgoingEdges="_vhcHgHq9Eeu58Luv6QLqsQ">
+        <target xmi:type="filesystem:Folder" href="MyFilesystem.filesystem#//@drives.1/@contents.0"/>
+        <semanticElements xmi:type="filesystem:Folder" href="MyFilesystem.filesystem#//@drives.1/@contents.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_vhWA4Xq9Eeu58Luv6QLqsQ" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_vhcHgHq9Eeu58Luv6QLqsQ" sourceNode="_vhWA4Hq9Eeu58Luv6QLqsQ" targetNode="_vfSLYHq9Eeu58Luv6QLqsQ">
+      <target xmi:type="filesystem:Sync" href="MyFilesystem.filesystem#//@syncs.0"/>
+      <semanticElements xmi:type="filesystem:Sync" href="MyFilesystem.filesystem#//@syncs.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_vhdVoHq9Eeu58Luv6QLqsQ" lineStyle="dot" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@edgeMappings[name='Sync']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@edgeMappings[name='Sync']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_vhejwHq9Eeu58Luv6QLqsQ" sourceNode="_vhNeAHq9Eeu58Luv6QLqsQ" targetNode="_vfXq8Hq9Eeu58Luv6QLqsQ">
+      <target xmi:type="filesystem:Shortcut" href="MyFilesystem.filesystem#//@drives.0/@contents.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_vhejwXq9Eeu58Luv6QLqsQ" lineStyle="dash" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@edgeMappings[name='Shortcut2File']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@edgeMappings[name='Shortcut2File']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_vdc_YHq9Eeu58Luv6QLqsQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.epsilon.eugenia.sirius.example.filesystem.design/description/filesystem.odesign#//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer"/>
+    <target xmi:type="filesystem:Filesystem" href="MyFilesystem.filesystem#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -1,0 +1,177 @@
+/**
+ * ============================================================================
+ * ECORE UTIL
+ * ============================================================================
+ *
+ * Helper operations for ECore models annotated with diagram generation 
+ * annotations.
+ *
+ * Following metamodels are required.
+ * ECore
+ * 
+ * ============================================================================
+ */
+ 
+/**
+ * ----------------------------------------------------------------------------
+ * ANNOTATIONS - GENERAL
+ * ----------------------------------------------------------------------------
+ */
+operation ECore!EModelElement getAnnotation(name : String) : ECore!EAnnotation {
+	var ann := self.eAnnotations.selectOne(a|a.source = name);
+	
+	if (self.isTypeOf(ECore!EClass) and ann.isUndefined()) {
+		for (s in self.eSuperTypes) {
+			var sann := s.getAnnotation(name);
+			if (sann.isDefined()) return sann;
+		}
+	}
+	
+	return ann;
+}
+
+operation ECore!EModelElement getAnnotationValue(name : String, detail : String) : Any {
+	var ann := self.eAnnotations.selectOne(a|a.source = name);
+	var det;
+
+	if (ann.isDefined()) {
+		det := ann.details.selectOne(d|d.key = detail);
+	}
+
+	if (det.isDefined()) {
+		return det.value;
+	}
+	else if (self.isTypeOf(ECore!EClass)) {
+		for (s in self.eSuperTypes) {
+			var sann := s.getAnnotationValue(name, detail);
+			if (sann.isDefined()) {
+				return sann;
+			}
+		}
+	}
+	return det;	
+}
+
+operation ECore!EAnnotation getDetail(key : String) : String {
+	var detail := self.details.selectOne(d|d.key = key);
+	if (detail.isDefined()) {return detail.value;}
+	else {return null;}
+}
+
+operation ECore!EModelElement isAnnotatedAs(name : String) : Boolean {
+	return self.getAnnotation(name).isDefined();
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * ANNOTATIONS - GMF SPECIFIC
+ * ----------------------------------------------------------------------------
+ */
+@cached
+operation ECore!EReference isLink() : Boolean {
+	return self.isAnnotatedAs('gmf.link');
+}
+
+@cached
+operation ECore!EClass isLink() : Boolean {
+	if (self.abstract) return false;
+	 
+	var isLink := self.isAnnotatedAs('gmf.link');
+	var isNoLink := self.isAnnotatedAs('gmf.nolink');
+	
+	if (isNoLink) return false;
+	else if (isLink) return true;
+	else return self.eSuperTypes.exists(s|s.isLink());
+	
+	return isLink;
+}
+
+@cached
+operation ECore!EClass isNode() : Boolean {
+	if (self.isLink()) return false;
+	if (self.abstract) return false;
+	if (self == getDiagramClass()) return false;
+	
+	var isNode := self.isAnnotatedAs('gmf.node');
+	var isNoNode := self.isAnnotatedAs('gmf.nonode');
+	
+	if (isNoNode) return false;
+	else if (isNode) return true;
+	else return self.eSuperTypes.exists(s|s.isNode());
+	
+	return isNode;
+}
+
+@cached
+operation ECore!EClass getNodeAnn() : ECore!EAnnotation {
+	return self.getAnnotation('gmf.node');
+}
+
+@cached
+operation ECore!ENamedElement getLinkAnn() : ECore!EAnnotation {
+	return self.getAnnotation('gmf.link');
+}
+
+@cached
+operation ECore!EClass getCompartmentReferences() : Collection {
+	return self.getContainmentRefs().select(r|r.isAnnotatedAs('gmf.compartment'));
+}
+
+@cached
+operation ECore!EClass isPhantom() : Boolean {
+	if (not self.isNode()) return false;
+	return self.getDetail("phantom").ifUndefined(false).asBoolean();
+}
+
+// TODO: Account for other types of label expression
+@cached
+operation ECore!EClass getLabelExpression() : Any {
+	var ann : String;
+	if (self.isNode()) ann := 'gmf.node';
+	else ann := 'gmf.link';
+
+	var label := self.getAnnotationValue(ann, 'label');
+	if (label.isDefined()) return "feature:" + label;
+	
+	var labelEol := self.getAnnotationValue(ann, 'label.eol');
+	if (labelEol.isDefined()) return 'eol:' + labelEol;
+	
+	return 'feature:name'; // FIXME: Original EOL required a label detail
+}
+
+@cached
+operation getDiagramClass() : ECore!EClass {
+	return ECore!EClass.all.selectOne(c|c.isAnnotatedAs('gmf.diagram'));
+}
+
+@cached
+operation ECore!EClass getContainmentRefs() {
+	return self.eAllStructuralFeatures.select(sf : ECore!EReference | sf.containment);
+}
+
+@cached
+operation ECore!EClass getConcreteSubtypes() : Collection {
+	return ECore!EClass.all.select(e|(not e.abstract) and (e.eAllSuperTypes.includes(self) or e = self));
+}
+
+@cached
+operation ECore!EClass hasCompartments() : Boolean {
+	return self.isNode() and self.getContainmentRefs().exists(r|r.isAnnotatedAs('gmf.compartment'));
+}
+
+@cached
+operation ECore!EClass getAllSuitableContainmentReferences() : OrderedSet {
+	var suitableReferences : OrderedSet;
+	for (ref in ECore!EReference.all.select(sf|sf.containment)){
+		if (self.eAllSuperTypes.includes(ref.eType) or self = ref.eType) 
+			suitableReferences.add(ref);
+	}
+	return suitableReferences;
+}
+
+@cached
+operation ECore!EClass getOneSuitableContainmentReference() {
+	for (ref in ECore!EReference.all.select(sf|sf.containment)){
+		if (self.eAllSuperTypes.includes(ref.eType) or self = ref.eType) return ref;
+	}
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<filesystem:Filesystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:filesystem="filesystem">
+  <drives name="C:">
+    <contents xsi:type="filesystem:Folder" name="My Documents">
+      <contents name="photo.jpg"/>
+    </contents>
+    <contents xsi:type="filesystem:Shortcut" name="photo.lnk" target="//@drives.0/@contents.0/@contents.0"/>
+  </drives>
+  <drives name="D:">
+    <contents xsi:type="filesystem:Folder" name="Backup"/>
+  </drives>
+  <syncs source="//@drives.1/@contents.0" target="//@drives.0/@contents.0"/>
+</filesystem:Filesystem>
