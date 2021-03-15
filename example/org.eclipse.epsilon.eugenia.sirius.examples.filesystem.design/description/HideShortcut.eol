@@ -1,0 +1,13 @@
+// create a new filter 
+var iconFilter := new ODesign!CompositeFilterDescription;
+iconFilter.name := "Hide Shortcuts"; 
+// create a new mapping filter 
+var mappingFilter := new ODesign!MappingFilter;
+// set the filter to apply on a shortcut 
+mappingFilter.mappings.add(ODesign!NodeMapping.all.selectOne(x|x.name="Shortcut"));
+// add the mapping filter to the icon filter
+iconFilter.filters.add(mappingFilter);
+// now add the icon filter to the diagram
+// in this case, our diagram description is the first diagram in the model
+ODesign!DiagramDescription.all.first().filters.add(iconFilter);
+

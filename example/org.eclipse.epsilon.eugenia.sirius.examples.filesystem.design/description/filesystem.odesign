@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Filesystem" version="12.0.0.2017041100">
+  <ownedViewpoints name="Filesystem">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Diagram" domainClass="filesystem::Filesystem">
+      <metamodel href="../../org.eclipse.epsilon.eugenia.sirius.examples.filesystem/model/filesystem.ecore#/"/>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Hide Shortcuts">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut']"/>
+      </filters>
+      <defaultLayer name="Default">
+        <edgeMappings name="Sync" semanticCandidatesExpression="aql:self.eContents()->select(x|x.oclIsTypeOf(filesystem::Sync))" sourceMapping="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='File']" targetMapping="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='File']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="filesystem::Sync" useDomainElement="true">
+          <style strokeColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_EDGE_COLOR']" lineStyle="dot" targetArrow="NoDecoration" sizeComputationExpression="2"/>
+        </edgeMappings>
+        <edgeMappings name="Shortcut2File" sourceMapping="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut']" targetMapping="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='File']" targetFinderExpression="feature:target">
+          <style strokeColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_EDGE_COLOR']" lineStyle="dash" sizeComputationExpression="[eContents()->size()/]"/>
+        </edgeMappings>
+        <containerMappings name="Drive" semanticCandidatesExpression="aql:self.eContents()->select(x|x.oclIsTypeOf(filesystem::Drive))" domainClass="filesystem::Drive" reusedContainerMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']">
+          <subNodeMappings name="Shortcut" semanticCandidatesExpression="aql:self.eContents()->select(x|x.oclIsTypeOf(filesystem::Shortcut))" domainClass="filesystem::Shortcut">
+            <style xsi:type="style:EllipseNodeDescription" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_BORDER']" labelColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_LABEL']" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_COLOR']" horizontalDiameterComputationExpression="[view.name.size()+3/]" verticalDiameterComputationExpression="4"/>
+          </subNodeMappings>
+          <subNodeMappings name="File" semanticCandidatesExpression="aql:self.eContents()->select(x|x.oclIsTypeOf(filesystem::File))" domainClass="filesystem::File">
+            <style xsi:type="style:EllipseNodeDescription" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_BORDER']" labelColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_LABEL']" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_COLOR']" horizontalDiameterComputationExpression="[view.name.size()+3/]" verticalDiameterComputationExpression="4"/>
+          </subNodeMappings>
+          <subContainerMappings name="Folder" semanticCandidatesExpression="aql:self.eContents()->select(x|x.oclIsTypeOf(filesystem::Folder))" domainClass="filesystem::Folder" reusedNodeMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='File']" reusedContainerMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive'] //@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder']">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_BORDER']" labelColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_LABEL']">
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_BORDER']" labelColor="//@userColorsPalettes[name='Default']/@entries[name='DEFAULT_LABEL']">
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Nodes">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Drive" containerMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="aql:container.oclIsTypeOf(filesystem::Filesystem)">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="filesystem::Drive" referenceName="drives"/>
+                  </cases>
+                  <default>
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="filesystem::Drive" referenceName="contents"/>
+                  </default>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Folder" containerMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subContainerMappings[name='Folder']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="filesystem::Folder" referenceName="contents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Shortcut" nodeMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='Shortcut']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="filesystem::Shortcut" referenceName="contents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="File" nodeMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@containerMappings[name='Drive']/@subNodeMappings[name='File']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="filesystem::File" referenceName="contents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Links">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Sync" edgeMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@edgeMappings[name='Sync']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:sourceView.getParentDiagram().target">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="filesystem::Sync" referenceName="syncs">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Shortcut2File" edgeMappings="//@ownedViewpoints[name='Filesystem']/@ownedRepresentations[name='Diagram']/@defaultLayer/@edgeMappings[name='Shortcut2File']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+  <userColorsPalettes name="Default">
+    <entries xsi:type="description:UserFixedColor" red="255" green="255" blue="0" name="DEFAULT_COLOR"/>
+    <entries xsi:type="description:UserFixedColor" red="0" green="0" blue="0" name="DEFAULT_EDGE_COLOR"/>
+    <entries xsi:type="description:UserFixedColor" red="0" green="0" blue="0" name="DEFAULT_BORDER"/>
+    <entries xsi:type="description:UserFixedColor" red="0" green="0" blue="0" name="DEFAULT_LABEL"/>
+  </userColorsPalettes>
+</description:Group>
